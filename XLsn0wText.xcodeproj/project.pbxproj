@@ -31,6 +31,7 @@
 		353869421D9164F700CDFAA0 /* YYTextWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 353869271D9164F700CDFAA0 /* YYTextWeakProxy.m */; };
 		353869431D9164F700CDFAA0 /* YYLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 353869291D9164F700CDFAA0 /* YYLabel.m */; };
 		353869441D9164F700CDFAA0 /* YYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3538692C1D9164F700CDFAA0 /* YYTextView.m */; };
+		3538694A1D9166BD00CDFAA0 /* XLsn0wText.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 353869491D9166BD00CDFAA0 /* XLsn0wText.podspec */; };
 		359437CB1D9163AC00D9289F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 359437CA1D9163AC00D9289F /* main.m */; };
 		359437CE1D9163AC00D9289F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 359437CD1D9163AC00D9289F /* AppDelegate.m */; };
 		359437D11D9163AC00D9289F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 359437D01D9163AC00D9289F /* ViewController.m */; };
@@ -86,9 +87,10 @@
 		353869271D9164F700CDFAA0 /* YYTextWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextWeakProxy.m; sourceTree = "<group>"; };
 		353869281D9164F700CDFAA0 /* YYLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYLabel.h; sourceTree = "<group>"; };
 		353869291D9164F700CDFAA0 /* YYLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYLabel.m; sourceTree = "<group>"; };
-		3538692A1D9164F700CDFAA0 /* YYText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYText.h; sourceTree = "<group>"; };
+		3538692A1D9164F700CDFAA0 /* XLText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLText.h; sourceTree = "<group>"; };
 		3538692B1D9164F700CDFAA0 /* YYTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextView.h; sourceTree = "<group>"; };
 		3538692C1D9164F700CDFAA0 /* YYTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextView.m; sourceTree = "<group>"; };
+		353869491D9166BD00CDFAA0 /* XLsn0wText.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XLsn0wText.podspec; sourceTree = "<group>"; };
 		359437C61D9163AC00D9289F /* XLsn0wText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLsn0wText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		359437CA1D9163AC00D9289F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		359437CC1D9163AC00D9289F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,9 +117,10 @@
 		353868F81D9164F700CDFAA0 /* XLsn0w */ = {
 			isa = PBXGroup;
 			children = (
-				353869281D9164F700CDFAA0 /* YYLabel.h */,
+				353869491D9166BD00CDFAA0 /* XLsn0wText.podspec */,
+				3538692A1D9164F700CDFAA0 /* XLText.h */,
 				353869291D9164F700CDFAA0 /* YYLabel.m */,
-				3538692A1D9164F700CDFAA0 /* YYText.h */,
+				353869281D9164F700CDFAA0 /* YYLabel.h */,
 				3538692B1D9164F700CDFAA0 /* YYTextView.h */,
 				3538692C1D9164F700CDFAA0 /* YYTextView.m */,
 				353868F91D9164F700CDFAA0 /* Component */,
@@ -291,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3538694A1D9166BD00CDFAA0 /* XLsn0wText.podspec in Resources */,
 				359437D91D9163AC00D9289F /* LaunchScreen.storyboard in Resources */,
 				359437D61D9163AC00D9289F /* Assets.xcassets in Resources */,
 				359437D41D9163AC00D9289F /* Main.storyboard in Resources */,
