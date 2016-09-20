@@ -40,7 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
  See NSAttributedString+YYText.h for more convenience methods to set the attributes.
  See YYTextAttribute.h and YYTextLayout.h for more information.
  */
-@interface YYLabel : UIView <NSCoding>
+@interface XLsn0wLabel : UIView <NSCoding>
 
 #pragma mark - Accessing the Text Attributes
 ///=============================================================================

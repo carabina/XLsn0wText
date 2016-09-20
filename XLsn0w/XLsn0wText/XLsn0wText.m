@@ -9,7 +9,8 @@
 //  LICENSE file in the root directory of this source tree.
 //
 
-#import "YYTextView.h"
+#import "XLsn0wText.h"
+
 #import "YYTextInput.h"
 #import "YYTextContainerView.h"
 #import "YYTextSelectionView.h"
@@ -104,7 +105,7 @@ typedef NS_ENUM(NSUInteger, YYTextMoveDirection) {
 @end
 
 
-@interface YYTextView () <UIScrollViewDelegate, UIAlertViewDelegate, YYTextDebugTarget, YYTextKeyboardObserver> {
+@interface XLsn0wText () <UIScrollViewDelegate, UIAlertViewDelegate, YYTextDebugTarget, YYTextKeyboardObserver> {
     
     YYTextRange *_selectedTextRange; /// nonnull
     YYTextRange *_markedTextRange;
@@ -184,7 +185,7 @@ typedef NS_ENUM(NSUInteger, YYTextMoveDirection) {
 @end
 
 
-@implementation YYTextView
+@implementation XLsn0wText
 
 #pragma mark - @protocol UITextInputTraits
 @synthesize autocapitalizationType = _autocapitalizationType;
@@ -3690,10 +3691,11 @@ typedef NS_ENUM(NSUInteger, YYTextMoveDirection) {
 
 
 
-@interface YYTextView(IBInspectableProperties)
+@interface XLsn0wText (IBInspectableProperties)
+
 @end
 
-@implementation YYTextView(IBInspectableProperties)
+@implementation XLsn0wText (IBInspectableProperties)
 
 - (BOOL)fontIsBold_:(UIFont *)font {
     if (![font respondsToSelector:@selector(fontDescriptor)]) return NO;

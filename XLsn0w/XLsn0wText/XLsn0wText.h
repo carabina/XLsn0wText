@@ -21,7 +21,7 @@
 #import "YYTextAttribute.h"
 #endif
 
-@class YYTextView;
+@class XLsn0wText;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -34,18 +34,18 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @protocol YYTextViewDelegate <NSObject, UIScrollViewDelegate>
 @optional
-- (BOOL)textViewShouldBeginEditing:(YYTextView *)textView;
-- (BOOL)textViewShouldEndEditing:(YYTextView *)textView;
-- (void)textViewDidBeginEditing:(YYTextView *)textView;
-- (void)textViewDidEndEditing:(YYTextView *)textView;
-- (BOOL)textView:(YYTextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text;
-- (void)textViewDidChange:(YYTextView *)textView;
-- (void)textViewDidChangeSelection:(YYTextView *)textView;
+- (BOOL)textViewShouldBeginEditing:(XLsn0wText *)textView;
+- (BOOL)textViewShouldEndEditing:(XLsn0wText *)textView;
+- (void)textViewDidBeginEditing:(XLsn0wText *)textView;
+- (void)textViewDidEndEditing:(XLsn0wText *)textView;
+- (BOOL)textView:(XLsn0wText *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text;
+- (void)textViewDidChange:(XLsn0wText *)textView;
+- (void)textViewDidChangeSelection:(XLsn0wText *)textView;
 
-- (BOOL)textView:(YYTextView *)textView shouldTapHighlight:(YYTextHighlight *)highlight inRange:(NSRange)characterRange;
-- (void)textView:(YYTextView *)textView didTapHighlight:(YYTextHighlight *)highlight inRange:(NSRange)characterRange rect:(CGRect)rect;
-- (BOOL)textView:(YYTextView *)textView shouldLongPressHighlight:(YYTextHighlight *)highlight inRange:(NSRange)characterRange;
-- (void)textView:(YYTextView *)textView didLongPressHighlight:(YYTextHighlight *)highlight inRange:(NSRange)characterRange rect:(CGRect)rect;
+- (BOOL)textView:(XLsn0wText *)textView shouldTapHighlight:(YYTextHighlight *)highlight inRange:(NSRange)characterRange;
+- (void)textView:(XLsn0wText *)textView didTapHighlight:(YYTextHighlight *)highlight inRange:(NSRange)characterRange rect:(CGRect)rect;
+- (BOOL)textView:(XLsn0wText *)textView shouldLongPressHighlight:(YYTextHighlight *)highlight inRange:(NSRange)characterRange;
+- (void)textView:(XLsn0wText *)textView didLongPressHighlight:(YYTextHighlight *)highlight inRange:(NSRange)characterRange rect:(CGRect)rect;
 @end
 
 
@@ -67,7 +67,7 @@ NS_ASSUME_NONNULL_BEGIN
  See NSAttributedString+YYText.h for more convenience methods to set the attributes.
  See YYTextAttribute.h and YYTextLayout.h for more information.
  */
-@interface YYTextView : UIScrollView <UITextInput>
+@interface XLsn0wText : UIScrollView <UITextInput>
 
 
 #pragma mark - Accessing the Delegate

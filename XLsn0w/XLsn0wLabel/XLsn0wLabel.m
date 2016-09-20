@@ -9,7 +9,8 @@
 //  LICENSE file in the root directory of this source tree.
 //
 
-#import "YYLabel.h"
+#import "XLsn0wLabel.h"
+
 #import "YYTextAsyncLayer.h"
 #import "YYTextWeakProxy.h"
 #import "YYTextUtilities.h"
@@ -28,7 +29,7 @@ static dispatch_queue_t YYLabelGetReleaseQueue() {
 #define kAsyncFadeDuration 0.08 // Time in seconds for async display fadeout animation.
 
 
-@interface YYLabel() <YYTextDebugTarget, YYTextAsyncLayerDelegate> {
+@interface XLsn0wLabel () <YYTextDebugTarget, YYTextAsyncLayerDelegate> {
     NSMutableAttributedString *_innerText; ///< nonnull
     YYTextLayout *_innerLayout;
     YYTextContainer *_innerContainer; ///< nonnull
@@ -63,7 +64,7 @@ static dispatch_queue_t YYLabelGetReleaseQueue() {
 @end
 
 
-@implementation YYLabel
+@implementation XLsn0wLabel
 
 #pragma mark - Private
 
@@ -77,7 +78,7 @@ static dispatch_queue_t YYLabelGetReleaseQueue() {
 
 - (void)_updateLayout {
     _innerLayout = [YYTextLayout layoutWithContainer:_innerContainer text:_innerText];
-    _shrinkInnerLayout = [YYLabel _shrinkLayoutWithLayout:_innerLayout];
+    _shrinkInnerLayout = [XLsn0wLabel _shrinkLayoutWithLayout:_innerLayout];
 }
 
 - (void)_setLayoutNeedUpdate {
@@ -207,7 +208,7 @@ static dispatch_queue_t YYLabelGetReleaseQueue() {
             [hiText yy_setAttribute:key value:value range:_highlightRange];
         }];
         _highlightLayout = [YYTextLayout layoutWithContainer:_innerContainer text:hiText];
-        _shrinkHighlightLayout = [YYLabel _shrinkLayoutWithLayout:_highlightLayout];
+        _shrinkHighlightLayout = [XLsn0wLabel _shrinkLayoutWithLayout:_highlightLayout];
         if (!_highlightLayout) _highlight = nil;
     }
     
@@ -1109,7 +1110,7 @@ static dispatch_queue_t YYLabelGetReleaseQueue() {
         YYTextLayout *drawLayout = layout;
         if (layoutNeedUpdate) {
             layout = [YYTextLayout layoutWithContainer:container text:text];
-            shrinkLayout = [YYLabel _shrinkLayoutWithLayout:layout];
+            shrinkLayout = [XLsn0wLabel _shrinkLayoutWithLayout:layout];
             if (isCancelled()) return;
             layoutUpdated = YES;
             drawLayout = shrinkLayout ? shrinkLayout : layout;
@@ -1156,7 +1157,7 @@ static dispatch_queue_t YYLabelGetReleaseQueue() {
         }
         [layer removeAnimationForKey:@"contents"];
         
-        __strong YYLabel *view = (YYLabel *)layer.delegate;
+        __strong XLsn0wLabel *view = (XLsn0wLabel *)layer.delegate;
         if (!view) return;
         if (view->_state.layoutNeedUpdate && layoutUpdated) {
             view->_innerLayout = layout;
@@ -1209,10 +1210,11 @@ static dispatch_queue_t YYLabelGetReleaseQueue() {
 
 
 
-@interface YYLabel(IBInspectableProperties)
+@interface XLsn0wLabel (IBInspectableProperties)
+
 @end
 
-@implementation YYLabel (IBInspectableProperties)
+@implementation XLsn0wLabel (IBInspectableProperties)
 
 - (BOOL)fontIsBold_:(UIFont *)font {
     if (![font respondsToSelector:@selector(fontDescriptor)]) return NO;

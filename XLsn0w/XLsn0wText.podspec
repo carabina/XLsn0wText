@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 
-  s.version      = '1.0.1'
+  s.version      = '1.1.1'
 
   s.name         = 'XLsn0wText'
   s.summary      = 'Powerful text framework for iOS to display and edit rich text.'
