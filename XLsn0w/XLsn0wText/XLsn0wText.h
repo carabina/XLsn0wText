@@ -10,6 +10,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreFoundation/CoreFoundation.h>
+#import <CoreText/CoreText.h>
+#import <QuartzCore/QuartzCore.h>
+#import <Accelerate/Accelerate.h>
+#import <MobileCoreServices/MobileCoreServices.h>
 
 #if __has_include(<YYText/YYText.h>)
 #import <YYText/YYTextParser.h>
